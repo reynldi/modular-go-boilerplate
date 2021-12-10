@@ -1,0 +1,5 @@
+type InfoQuery {
+    email: String!
+    isEmailVerified: Boolean!
+    actionToken: String!
+}

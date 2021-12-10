@@ -1,0 +1,27 @@
+@startuml
+
+' hide the spot
+hide circle
+
+entity "User" as users {
+  * userId varchar(32) <<PK>>
+  --
+  * email varchar(50)
+  * passwordHash varchar(128)
+  status boolean
+}
+
+entity "UserAuthInfo" as oauthInfo {
+  * id int <<PK>>
+  --
+  * userId varchar(32) <<FK>>
+  * oauthProvider varchar(16)
+  * accessToken varchar(64)
+  accesTokenExpiry datetime
+  refreshToken varchar(64)
+  refreshTokenExpiry datetime
+}
+
+oauthInfo }|-- users
+
+@enduml

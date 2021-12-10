@@ -1,0 +1,4 @@
+extend type Query {
+    infoQuery(input: InfoQueryInput): InfoQuery!
+    userAuth(input: UserAuthInput): UserAuth!
+}

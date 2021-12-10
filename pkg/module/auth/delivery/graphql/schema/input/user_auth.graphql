@@ -1,0 +1,4 @@
+input UserAuthInput {
+    email: String! @binding(constraint: "required,email")
+    password: String! @binding(constraint: "required,alphanum")
+}

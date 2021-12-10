@@ -1,0 +1,4 @@
+type HealthCheck {
+    serviceName: String!
+    uptime: String!
+}

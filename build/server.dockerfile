@@ -1,0 +1,1 @@
+FROM --platform=amd64 ubuntu:20.04
